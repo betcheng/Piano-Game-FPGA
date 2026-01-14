@@ -1,0 +1,16 @@
+# Efinity folders
+outflow/
+work_syn/
+work_pnr/
+work_pt/
+db/
+
+# Temporary and backup files
+*.efx_prj
+*.log
+*.jou
+
+# Optional: Ignore bitstreams if you don't want to host binary images
+*.bit
+*.hex
+*.bin
