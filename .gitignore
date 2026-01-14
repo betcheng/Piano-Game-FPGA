@@ -1,16 +1,88 @@
-# Efinity folders
+########################
+# 系统 & 编辑器杂项
+########################
+# macOS
+.DS_Store
+.AppleDouble
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 通用临时文件
+*.log
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+*.swp
+*.swo
+
+# VSCode
+.vscode/
+
+########################
+# Efinity / FPGA 相关
+########################
+
+# Efinity 自动生成的目录（从你截图里来的）
 outflow/
-work_syn/
+outflow_select_test/
 work_pnr/
 work_pt/
+work_syn/
+
+# 其他常见中间目录（有就自动被忽略，没有也没关系）
 db/
+incremental_db/
+cdb/
+ddb/
+*.ddb
 
-# Temporary and backup files
-*.efx_prj
-*.log
-*.jou
-
-# Optional: Ignore bitstreams if you don't want to host binary images
-*.bit
+# 编译输出：报告、bitstream、烧录文件等
+*.rpt
+*.out
+*.pin
+*.pof
+*.jed
+*.svf
+*.jic
 *.hex
-*.bin
+*.mcs
+*.bit
+*.fsf
+*.pmsf
+
+# 仿真生成的文件 / 目录
+simulation/
+sim/
+simu/
+work/
+*.vcd
+*.wlf
+*.asdb
+*.fsdb
+
+# netlist / 中间文件
+*.edf
+*.edif
+*.ngc
+*.ngd
+*.ncd
+*.sdf
+*.map
+*.dcp
+*.ngm
+*.par
+*.mrp
+*.xst
+
+# 约束临时备份
+*~.sdc
+*~.qsf
+*~.xdc
+
